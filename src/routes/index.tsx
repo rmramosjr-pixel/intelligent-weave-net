@@ -1,24 +1,55 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { useState } from "react";
+import { Toaster } from "@/components/ui/sonner";
+import { useLenis } from "@/hooks/useLenis";
+import { Preloader } from "@/components/portfolio/Preloader";
+import { Backdrop } from "@/components/portfolio/Backdrop";
+import { CursorGlow } from "@/components/portfolio/CursorGlow";
+import { Nav } from "@/components/portfolio/Nav";
+import { Hero } from "@/components/portfolio/Hero";
+import { About } from "@/components/portfolio/About";
+import { Skills } from "@/components/portfolio/Skills";
+import { Visualizer } from "@/components/portfolio/Visualizer";
+import { Projects } from "@/components/portfolio/Projects";
+import { Experience } from "@/components/portfolio/Experience";
+import { Stats } from "@/components/portfolio/Stats";
+import { Services } from "@/components/portfolio/Services";
+import { Process } from "@/components/portfolio/Process";
+import { Contact } from "@/components/portfolio/Contact";
+import { Footer } from "@/components/portfolio/Footer";
 
-// No head() here: the home route inherits title/description/og/twitter from
-// __root.tsx, and ships no og:image so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
 export const Route = createFileRoute("/")({
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
+  const [ready, setReady] = useState(false);
+  useLenis();
+
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
+    <>
+      <Preloader onDone={() => setReady(true)} />
+      <Backdrop />
+      <CursorGlow />
+      <div
+        className={`transition-opacity duration-700 ${ready ? "opacity-100" : "opacity-0"}`}
+      >
+        <Nav />
+        <main>
+          <Hero />
+          <About />
+          <Skills />
+          <Visualizer />
+          <Projects />
+          <Experience />
+          <Stats />
+          <Services />
+          <Process />
+          <Contact />
+        </main>
+        <Footer />
+      </div>
+      <Toaster position="bottom-right" theme="dark" />
+    </>
   );
 }
