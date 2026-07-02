@@ -52,12 +52,11 @@ export function Process() {
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.04, type: "spring", stiffness: 150 }}
                 whileHover={{ y: -4, scale: 1.06 }}
-                animate={{ y: [0, i % 2 === 0 ? -5 : 5, 0] }}
                 className="glass rounded-full px-4 py-2 font-mono text-sm text-foreground/90"
-                style={{ animationDelay: `${i * 0.2}s` }}
               >
                 {t}
               </motion.span>
+
             ))}
           </div>
         </div>
