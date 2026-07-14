@@ -84,7 +84,7 @@ export function ProjectInquiry() {
   }
 
   return (
-    <section id="project-inquiry" className="relative px-6 py-28">
+    <section id="contact" className="relative px-6 py-28">
       <SectionHeading
         eyebrow="Project Inquiry"
         title="Have a Project in Mind?"
