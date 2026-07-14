@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { useState, type FormEvent } from "react";
 import { SectionHeading } from "./primitives";
 import { toast } from "sonner";
-import { Send, ShieldCheck, CheckCircle2 } from "lucide-react";
+import { Send, ShieldCheck, CheckCircle2, Mail, Linkedin, Phone } from "lucide-react";
 
 const FORM_ENDPOINT =
   "https://docs.google.com/forms/d/e/1FAIpQLSeps41vJaTOsbcXJNWJJL-AE1ORCTClEDLoBlhp4DdFSdtdNg/formResponse";
