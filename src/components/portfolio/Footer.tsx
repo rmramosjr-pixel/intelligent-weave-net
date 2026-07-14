@@ -9,7 +9,7 @@ export function Footer() {
             <Terminal className="size-4" />
           </span>
           <span className="font-display text-sm font-semibold">
-            Redento M. Ramos, Jr.
+            Redentor M. Ramos, Jr.
           </span>
         </div>
         <p className="font-mono text-xs text-muted-foreground">
