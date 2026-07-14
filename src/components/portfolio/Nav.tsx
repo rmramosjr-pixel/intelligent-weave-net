@@ -29,7 +29,7 @@ export function Nav() {
             <Terminal className="size-4" />
           </span>
           <span className="text-sm tracking-tight">
-            Redento<span className="text-cyan">.dev</span>
+            Redentor<span className="text-cyan">.dev</span>
           </span>
         </a>
 

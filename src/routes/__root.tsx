@@ -73,7 +73,7 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
 }
 
 const SITE_TITLE =
-  "Redento M. Ramos, Jr. — Automation Engineer & AI Workflow Architect";
+  "Redentor M. Ramos, Jr. — Automation Engineer & AI Workflow Architect";
 const SITE_DESC =
   "Building intelligent automations that eliminate repetitive work. Python, AI agents, Zapier, Make.com, APIs and SQL for CRM, reporting and business operations.";
 
@@ -84,7 +84,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: SITE_TITLE },
       { name: "description", content: SITE_DESC },
-      { name: "author", content: "Redento M. Ramos, Jr." },
+      { name: "author", content: "Redentor M. Ramos, Jr." },
       {
         name: "keywords",
         content:
@@ -94,7 +94,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:title", content: SITE_TITLE },
       { property: "og:description", content: SITE_DESC },
       { property: "og:type", content: "website" },
-      { property: "og:site_name", content: "Redento Ramos — Automation Studio" },
+      { property: "og:site_name", content: "Redentor Ramos — Automation Studio" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: SITE_TITLE },
       { name: "twitter:description", content: SITE_DESC },
@@ -119,7 +119,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Person",
-          name: "Redento M. Ramos, Jr.",
+          name: "Redentor M. Ramos, Jr.",
           jobTitle: "Automation Engineer & AI Workflow Architect",
           description: SITE_DESC,
           knowsAbout: [

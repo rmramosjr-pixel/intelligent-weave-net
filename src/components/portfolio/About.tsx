@@ -39,7 +39,7 @@ export function About() {
                   RR
                 </div>
                 <div>
-                  <h3 className="font-display text-xl font-bold">Redento M. Ramos, Jr.</h3>
+                  <h3 className="font-display text-xl font-bold">Redentor M. Ramos, Jr.</h3>
                   <p className="font-mono text-xs text-cyan">
                     Automation Engineer · Python Dev
                   </p>
