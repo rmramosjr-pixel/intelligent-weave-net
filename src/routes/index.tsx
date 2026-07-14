@@ -45,7 +45,6 @@ function Index() {
           <Stats />
           <Services />
           <Process />
-          <Contact />
           <ProjectInquiry />
         </main>
         <Footer />
