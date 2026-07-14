@@ -186,6 +186,47 @@ export function ProjectInquiry() {
                   <ShieldCheck className="size-3.5 text-emerald" />
                   Messages will be sent securely
                 </p>
+
+                <div className="mt-6 grid gap-3 border-t border-glass-border pt-6 sm:grid-cols-3">
+                  <a
+                    href="mailto:redentormramosjr@gmail.com"
+                    className="group flex items-center gap-3 rounded-xl border border-glass-border bg-background/40 p-3 transition-colors hover:border-emerald/50 hover:text-emerald"
+                  >
+                    <span className="grid size-9 place-items-center rounded-lg bg-emerald/15 text-emerald">
+                      <Mail className="size-4" />
+                    </span>
+                    <div className="min-w-0">
+                      <p className="font-mono text-[10px] uppercase tracking-wider text-muted-foreground">Email</p>
+                      <p className="truncate text-sm font-medium">redentormramosjr@gmail.com</p>
+                    </div>
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/redentor-ramos-56015341a/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="group flex items-center gap-3 rounded-xl border border-glass-border bg-background/40 p-3 transition-colors hover:border-emerald/50 hover:text-emerald"
+                  >
+                    <span className="grid size-9 place-items-center rounded-lg bg-emerald/15 text-emerald">
+                      <Linkedin className="size-4" />
+                    </span>
+                    <div className="min-w-0">
+                      <p className="font-mono text-[10px] uppercase tracking-wider text-muted-foreground">LinkedIn</p>
+                      <p className="truncate text-sm font-medium">Redentor Ramos, Jr.</p>
+                    </div>
+                  </a>
+                  <a
+                    href="tel:09457646502"
+                    className="group flex items-center gap-3 rounded-xl border border-glass-border bg-background/40 p-3 transition-colors hover:border-emerald/50 hover:text-emerald"
+                  >
+                    <span className="grid size-9 place-items-center rounded-lg bg-emerald/15 text-emerald">
+                      <Phone className="size-4" />
+                    </span>
+                    <div className="min-w-0">
+                      <p className="font-mono text-[10px] uppercase tracking-wider text-muted-foreground">Mobile</p>
+                      <p className="truncate text-sm font-medium">0945 764 6502</p>
+                    </div>
+                  </a>
+                </div>
               </form>
             )}
           </div>
