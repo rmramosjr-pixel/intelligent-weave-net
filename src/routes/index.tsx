@@ -15,7 +15,6 @@ import { Experience } from "@/components/portfolio/Experience";
 import { Stats } from "@/components/portfolio/Stats";
 import { Services } from "@/components/portfolio/Services";
 import { Process } from "@/components/portfolio/Process";
-import { Contact } from "@/components/portfolio/Contact";
 import { ProjectInquiry } from "@/components/portfolio/ProjectInquiry";
 import { Footer } from "@/components/portfolio/Footer";
 
